@@ -33,9 +33,11 @@
 - **Pain** : "150 CV mais qui sait vraiment coder ?"
 - **Solution** : Dashboard seats → Accès talents certifiés → Scores quiz
 
-### B2B2C — Universités (ESTI, IT University)
-- **Besoin** : Outils évaluation automatisés, suivi étudiants
-- **Solution** : RAG évolutif + Bulk certification
+### B2B2C — Formateurs & Universités (ESTI, IT University, ISPM, GE-IT)
+- **Besoin** : Outils évaluation automatisés, suivi étudiants, certification en masse
+- **Solution** : Dashboard Formateur + Bulk Certify + Quiz Builder + RAG + Analytics
+- **Cibles** : ESTI (480/an), GE-IT (HaiRun), IT University, ISPM, Inclusiv Academy, Nogae Academy
+- **Voir détails** : `ideation/FORMATEURS_FEATURES.md`
 
 ---
 
@@ -63,6 +65,14 @@
 - **URL** : `/dashboard`
 - **Fonction** : Gestion seats, vue talents certifiés
 - **Améliorations** : Filtres par badges, détail talent
+
+### 5. Fonctionnalités Formateurs (⬜ À faire - Voir `ideation/FORMATEURS_FEATURES.md`)
+- **Dashboard Formateur** : `/formateur/dashboard` (stats, liste étudiants)
+- **Bulk Certify** : `/formateur/bulk-certify` (sélection multiple, auto-vérification scores)
+- **Quiz Builder** : `/formateur/quiz-builder` (UI éditeur + preview QuizCard)
+- **RAG Manager** : `/formateur/rag` (valider sources, ajouter sylabus/cours)
+- **Analytics** : `/formateur/analytics` (taux certification, insertion, ROI)
+- **LMS Integration** : `/formateur/integrations` (Moodle, Canvas, webhooks)
 
 ### 5. Pages SEO (⚡ À faire)
 - `/` — Landing (recrutement IT Madagascar)
@@ -111,7 +121,7 @@ nexio-core/
 | **B2C Étudiants** | Mentor IA + Certification | **Gratuit** |
 | **B2B PME** | 5 seats + accès talents | **500k/mois** |
 | **B2B Grandes** | 50 seats + API | **2M/mois** |
-| **B2B2C Universités** | RAG + bulk certif | **Sur devis** |
+| **B2B2C Formateurs** | RAG + bulk certif + Quiz Builder | **200k-1.5M/mois** |
 
 **Clé** : Les étudiants amènent le volume (gratuit), les entreprises paient.
 
