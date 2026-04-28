@@ -1,0 +1,21 @@
+{
+  "name": "nexio-work",
+  "version": "0.1.0",
+  "description": "Écosystème SaaS Nexio.work - Next Gen du travail à Madagascar",
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --filter web dev & pnpm --filter api dev",
+    "build": "pnpm -r build",
+    "deploy": "pnpm -r deploy"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9"
+  },
+  "license": "ISC",
+  "private": true
+}
